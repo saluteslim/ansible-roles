@@ -1,0 +1,9 @@
+---
+- name: Install MongoDB
+  apt:
+     name: mongodb
+     state: present
+     update_cache: yes
+
+- name: Start Mongod daemon
+  shell: "mongod &"
